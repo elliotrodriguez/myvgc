@@ -26,7 +26,10 @@ const App = () => {
     <SafeAreaView style={styles.mainContainer}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View style={styles.childContainer}>
+        <View
+          style={styles.childContainer}
+          accessibilityLabel="homeContainer"
+          testID="homeContainer">
           <Text>App.tsx</Text>
         </View>
       </ScrollView>

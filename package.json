@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build-android-aws": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "axios": "^0.26.1",
